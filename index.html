@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/myplugin.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="nav" class="mui-bar mui-bar-nav">
+			<span class="mui-icon mui-icon-back mui-pull-left mui-hidden"></span>
+			<h4 class="mui-title">我的作品one min</h4>
+			<span id="searchicon" class="mui-icon mui-icon-search mui-pull-right"></span>
+			<i style="font-size: 30px;" class="icon iconfont play">&#xe659;</i>
+		</div>
+		
+		<div class="mui-content">
+			<div id="scroll" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div id="article" style="padding-bottom: 45px;" class="mui-control-content mui-active">
+						
+						<!-----------------------------音乐功能区块------------------------------------>
+						<div id="music">
+							<img src="imgs/music_background.png"/>
+							<audio id="audio" src="http://m2.music.126.net/AUIOB8NMftRDq26kc81iyg==/7779044766748810.mp3"></audio>
+							<i  class="icon iconfont play">&#xe659;</i>
+						</div>
+					
+						<!---------------------------------文学功能区模块---------------------------------->
+						<div id="wenxue">
+							<h3 style="text-align: center; margin: 10px;">—— 一杯茶的品悦，三分钟的人生 ——</h3>
+							<div class="tag_label">文学</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com\/mpic\/s1001902.jpg"/>
+								<h4>小王子</h4>
+							</div>
+							<div class="book">
+								<img src="https://img1.doubanio.com/mpic/s27284878.jpg"/>
+								<h4>解忧杂货店</h4>
+							</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s28738251.jpg"/>
+								<h4>玛格丽特小镇</h4>
+							</div>
+							<div class="tag_label">散文</div>
+							<div class="book">
+								<img src="https://img1.doubanio.com/mpic/s28673707.jpg"/>
+								<h4>死神的浮力</h4>
+							</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s28620245.jpg"/>
+								<h4>冬日笔记</h4>
+							</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s2781615.jpg"/>
+								<h4>荆棘鸟</h4>
+							</div>
+							<div class="tag_label">童话</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s28753126.jpg"/>
+								<h4>自在独行</h4>
+							</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s28536926.jpg"/>
+								<h4>明天也是小春日和</h4>
+							</div>
+							<div class="book">
+								<img src="https://img1.doubanio.com/mpic/s28825579.jpg"/>
+								<h4>致亲爱的你</h4>
+							</div>
+							<div class="tag_label">推理</div>
+							<div class="book">
+								<img src="https://img1.doubanio.com/mpic/s28851079.jpg"/>
+								<h4>精神科的故事：在游泳池</h4>
+							</div>
+							<div class="book">
+								<img src="https://img1.doubanio.com/mpic/s6340977.jpg"/>
+								<h4>天才在左 疯子在右</h4>
+							</div>
+							<div class="book">
+								<img src="https://img3.doubanio.com/mpic/s28063701.jpg"/>
+								<h4>摆渡人</h4>
+							</div>
+						</div>
+					</div>
+					<!-----------------------------------结果模块--------------------------------------------->
+					<div id="result_article" class="mui-control-content">
+						<img id="book_image" src="https://img3.doubanio.com/mpic/s28738251.jpg"/>
+						<div id="book_info">
+							<p id="book_title">书名：小王子</p>
+							<p id="book_author">作者：安托万·德·圣埃克苏佩里</p>
+							<p id="book_price">定价：19.8元</p>
+						</div>
+						<p id="book_label">分类：<span>童话</span></p>
+						<!--作者简介-->
+						<div id="author_info"></div>
+						<!--笔记-->
+						<div id="book_note"></div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			<!--------------------------------底部导航栏模块------------------------------------------->
+			<div class="mui-bar mui-bar-tab">
+				<ul id="bot_nav">
+					<li><a href="#">文与学</a></li>
+					<li><a href="music.html">音同乐</a></li>
+					<li><a href="poem.html">诗承歌</a></li>
+					<li><a href="weather.html">云和雨</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!-----------------------------------搜索模块--------------------------------------------->
+		<div id="search_article" class="mui-content">
+			<div class="mui-bar mui-bar-nav">
+				<span id="search_back" class="mui-icon mui-icon-back"></span>
+				<div class="mui-title">
+					<input style="height: 35px;" type="text" name="" id="search_val" placeholder="请输入书名或关键字..." />
+				</div>
+				<span id="search_btn" class="mui-icon mui-icon-search mui-pull-right"></span>
+			</div>
+			<div id="myscroll" class="mui-scroll-wrapper">
+				<div id="toast"></div>
+				<div class="mui-scroll">
+					<div id="article_search_result" class="mui-slider">
+						<div class="mui-segmented-control mui-segmented-control-inverted mui-slider-indicator">
+							<a id="a_books" href="#result_books" class="mui-control-item mui-active">结果</a>
+							<a id="a_class" href="#my_list" class="mui-control-item">分类</a>
+						</div>
+						<!--<div class="mui-slider-progress-bar mui-col-xs-4"></div>-->
+						<div class="mui-slider-group">
+							<div id="result_books" class="mui-slider-item mui-control-content mui-active">
+								<ul class="mui-table-view"></ul>
+							</div>
+							<div id="my_list" class="mui-slider-item mui-control-content">
+								
+								<button style="display: block;" class="mui-btn mui-btn-green">文学</button>
+								<div class="tag_label">小说</div>
+								<div class="tag_label">随笔</div>
+								<div class="tag_label">日本文学</div>
+								<div class="tag_label">散文</div>
+								<div class="tag_label">童话</div>
+								<button style="display: block;" class="mui-btn mui-btn-danger">流行</button>
+								<div class="tag_label">推理</div>
+								<div class="tag_label">青春</div>
+								<div class="tag_label">言情</div>
+								<div class="tag_label">科幻</div>
+								<div class="tag_label">漫画</div>
+								<button style="display: block;" class="mui-btn mui-btn-grey">文化</button>
+								<div class="tag_label">历史</div>
+								<div class="tag_label">哲学</div>
+								<div class="tag_label">传记</div>
+								<div class="tag_label">建筑</div>
+								<div class="tag_label">电影</div>
+								<button style="display: block;" class="mui-btn mui-btn-blue">生活</button>
+								<div class="tag_label">旅行</div>
+								<div class="tag_label">励志</div>
+								<div class="tag_label">职场</div>
+								<div class="tag_label">美食</div>
+								<div class="tag_label">教育</div>
+								<button style="display: block;" class="mui-btn mui-btn-purple">经营</button>
+								<div class="tag_label">经济学</div>
+								<div class="tag_label">管理</div>
+								<div class="tag_label">金融</div>
+								<div class="tag_label">营销</div>
+								<div class="tag_label">理财</div>
+								<button style="display: block;" class="mui-btn mui-btn-yellow">科技</button>
+								<div class="tag_label">科普</div>
+								<div class="tag_label">互联网</div>
+								<div class="tag_label">编程</div>
+								<div class="tag_label">交互设计</div>
+								<div class="tag_label">算法</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+
+</html>
