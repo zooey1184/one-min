@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" type="text/css" href="iconfont/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	</head>
+
+	<body>
+		<div class="mui-bar mui-bar-nav">
+			<span id="back_home" class="mui-icon mui-icon-back"></span>
+			<div style="padding: 5px;" class="mui-title">
+				<h4 id="music-name">一生所爱</h4>
+				<h6 style="font-size: 14px;" id="music-singer">至尊宝</h6>
+			</div>
+			<span id="searchicon" class="mui-icon mui-icon-search mui-pull-right"></span>
+		</div>
+		
+		<div id="music_main" class="mui-content">
+			<!--音频播放主要控件--隐藏不可见-->
+			<audio id="audio" src="http://m2.music.126.net/AUIOB8NMftRDq26kc81iyg==/7779044766748810.mp3" preload="none"></audio>
+			
+			<!--歌曲图片-->
+			<img class="singer" src="imgs/music_def.png"/>
+			
+			<!--音量-->
+			<div id="music_voice" class="mui-input-range mui-input-row">
+				<div style="float: left; padding:30px;">
+					<label><i class="icon iconfont">&#xe60a;</i></label>
+				</div>
+				<div style="margin-left: 80px; padding: 30px;">
+					<input id="voice" type="range" value="50" min="0" max="100"/>
+				</div>
+			</div>
+			
+			<!--进度条-->
+			<div id="music_progess" class="mui-input-row mui-input-range">
+				<input type="range" name="" id="" value="0" min="0" max="100"/>
+			</div>
+			
+			
+			<!--播放控制面板-->
+			<div id="music_control">
+				<!--播放模式,id为首字母_play,例如随机播放：sj_play，循环和单曲-->
+				<div id="music_play_modal">
+					<i id="xh_play" class="icon iconfont">&#xe871;</i>
+				</div>
+				
+				<!--自定义播放组件-->
+				<ul id="music_plugin">
+					<li id="presong"><img src="imgs/pre_song.png"/></li>
+					<li id="playpause"><img src="imgs/music_play.png"/></li>
+					<li id="nextsong"><img src="imgs/next_song.png"/></li>
+				</ul>
+				
+				<!--我的歌单-->
+				<div id="music_list">
+					<i class="icon iconfont">&#xe638;</i>
+				</div>
+			</div>
+		</div>
+		
+		<!--------------------------------------搜索歌曲部分------------------------------------------------------>
+		<div id="music_search" class="mui-content">
+			<!--头部搜索信息栏-->
+			<div id="music_search_top" class="mui-bar mui-bar-nav">
+				<span style="color: white;" class="mui-icon mui-icon-arrowleft mui-pull-left"></span>
+				<input type="text" placeholder="search singer or song..."/>
+				<span style="color: white;" class="mui-icon mui-icon-search mui-pull-right"></span>
+			</div>
+			<!--中间搜索结果栏-->
+			<div id="music_search_result" class="mui-slider">
+				<div class="mui-segmented-control mui-segmented-control-inverted mui-slider-indicator">
+					<a id="a_danqu" href="#result_songs" class="mui-control-item mui-active">单曲</a>
+					<a id="a_gedan" href="#my_list" class="mui-control-item">我的歌单</a>
+				</div>
+				<!--<div class="mui-slider-progress-bar mui-col-xs-4"></div>-->
+				<div class="mui-slider-group">
+					<div id="result_songs" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view"></ul>
+					</div>
+					<div id="my_list" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>
