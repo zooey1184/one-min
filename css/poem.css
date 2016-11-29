@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+
+
+
+#poem_def>ul>li, #poem_name>ul>li{
+	display: inline-block;
+	writing-mode: tb-lr;
+	-webkit-writing-mode: vertical-lr;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+
+/***********************************诗歌分类***********************************************/
+
+#poem_catalog {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../imgs/poem_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 5;
+}
+
+#catalog_title {
+	margin: 100px auto;
+	margin-bottom: 50px;
+	writing-mode: tb-lr;
+	-webkit-writing-mode: vertical-lr;
+}
+
+.mui-slider-item {
+	padding: 65px;
+}
+
+h4,h5 {
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+p {
+	text-align: center;
+	color: #00896C;
+	font-size: 14px;
+}
+
+.mui-icon-close {
+	position: absolute;
+	left: 48%;
+	bottom: 30px;
+}
+
+#poem_catalog .mui-icon-close {
+	z-index: 5;
+}

@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+.wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #DD524D;
+	opacity: 0.7;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	border-radius: 50%;
+}
+
+.wave_af {
+	-webkit-animation: wave1 .4s linear;
+  	animation: wave1 .4s linear;
+}
+@-webkit-keyframes 
+   wave1 {  100% {
+   -webkit-transform: scale(2);
+   transform: scale(2);
+   opacity: 0;
+  }
+}
+@keyframes 
+  wave1 {  100% {
+   -webkit-transform: scale(2);
+   transform: scale(2);
+   opacity: 0;
+  }
+} 
+
+
+a {
+	text-decoration: none;
+}
+
+#nav>i {
+	position: absolute;
+	top: 0px;
+	right: 48%;
+	display: none;
+}
+
+#article {
+	margin-top: 45px;
+}
+
+#music {
+	position: relative;
+}
+
+#music>img {
+	
+	width: 100%;
+	max-height: 180px;
+}
+
+#music>i {
+	position: absolute;
+	left: 40%;
+	font-size: 60px;
+	top: 40px;
+	color: #0F2540;
+}
+
+.book {
+	display: inline-block;
+	width: calc(30%);
+	padding: 15px;
+}
+
+.book>h4 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 80px;
+}
+
+#bot_nav {width: 100%;}
+
+#bot_nav>li {
+	padding: 10px 20px;
+	float: left;
+	width: 25%;
+	position: relative;
+	overflow: hidden;
+}
+
+#bot_nav>li>a {
+	text-decoration: none;
+}
+
+.tag_label {
+	width: 70px;
+	height: 30px;
+	border: solid 1px #007AFF;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	margin: 5px 0 0 15px;
+	padding: 5px;
+}
+
+/*******************************搜索模块*********************************8*/
+#search_article {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	background-color: whitesmoke;
+	z-index: 99;
+}
+
+#search_val {
+	font-size: 14px;
+}
+
+#my_list>.tag_label {
+	display: inline-block;
+}
+
+#article_search_result {
+	margin-top: 45px;
+}
+
+#my_list>div {
+	position: relative;
+	overflow: hidden;
+}
+#my_list>button {
+	margin: 15px 0 0 17px;
+}
+
+
+/******************************************详情页模块****************************************/
+#result_article {
+	margin-top: 45px;
+}
+
+#result_article>img {
+	margin: 5px 10px 10px 15px;
+}
+#book_image {display: inline-block;}
+#book_info {
+	display: inline-block;
+	vertical-align: top;
+}
+#book_info>p {
+	padding: 5px;
+}
+#book_label>span {
+	border: 1px solid #0062CC;
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 5px;
+}
+#author_info {
+	padding: 15px;
+}
+#book_note {
+	padding: 10px 15px 60px 15px;
+}
+
+#toast {
+	background-color: #222222;
+	position: absolute;
+	top: 80%;
+	left: 35%;
+	width: 30%;
+	border-radius: 5px;
+	z-index: 99;
+	opacity: 0.7;
+	text-align: center;
+}
+#toast>p {
+	font-size: 12px;
+	color: white;
+	margin: 10px;
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#weather_main {
+	position: relative;
+	top: 40px;
+}
+
+.weather_content img {
+	
+	display: inline-block;
+	
+}
+
+.weather_info {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.weather_info label {
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	border-radius: 5px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background: gold;
+	color: white;
+	/*margin: 10px;*/
+}
+
+.weather_info span {
+	font-family: "微软雅黑";
+	/*display: block;*/
+	font-size: 12px;
+	color: black;
+	margin: 5px;
+}
+
+.weather_info p {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: black;
+	margin: 10px;
+}
+
+hr {
+	background: gainsboro;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.mui-icon-close {
+	position: absolute;
+	left: 47%;
+	bottom: 20px;
+}

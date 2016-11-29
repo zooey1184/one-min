@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/*#music_main {
+	min-height: 640px;
+	width: 100%;
+	background-image: url(../imgs/music-background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: blur(15px);
+}*/
+
+.singer {
+	width: 90%;
+	position: relative;
+	left: 5%;
+	top: 20px;
+}
+
+#audio {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 70%;
+	background: red;
+}
+
+#music_progess {
+	position: absolute;
+	width: 97%;
+	left: 2%;
+	bottom: 70px;
+}
+
+#music_control {
+	position: absolute;
+	width: 90%;
+	bottom: 0;
+	left: 5%;
+}
+
+#music_plugin>li {
+	display: inline-block;
+	vertical-align: auto;
+}
+
+#music_play_modal {
+	position: absolute;
+	left: 5%;
+	bottom: 6px;
+}
+
+#music_plugin {
+	position: absolute;
+	left: 28%;
+	bottom: 55px;
+}
+
+#presong {
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+
+#playpause {
+	position: absolute;
+	left: 50px;
+}
+
+#nextsong {
+	position: absolute;
+	top: 8px;
+	left: 116px;
+}
+
+#music_list {
+	position: absolute;
+	right: 5%;
+	bottom: 10px;
+}
+
+#sj_play {
+	font-size: 25px;
+}
+
+#xh_play {
+	font-size: 25px;
+}
+
+#dq_play {
+	font-size: 25px;
+}
+
+#music_list>i {
+	font-size: 25px;
+}
+
+
+
+/**************************************音乐搜索部分************************************/
+
+#music_search {
+	display: none;
+	z-index: 30;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*min-height: 500px;*/
+	height: 100%;
+	width: 100%;
+	/*background: #929292;
+	opacity: 0.7;*/
+}
+
+
+#music_search_top {
+	background: #554236;
+	height: 50px;
+}
+
+#music_search_top input{
+	width: 80%;
+	position: absolute;
+	top: 5px;
+	left: 10%;
+}
+
+#music_search_result {
+	background: #FFFFFB;
+}
+
+#result_singer>button {
+	margin: 10px;
+}
+
+.hide_info, .hide_imgurl {
+	display: none;
+}
